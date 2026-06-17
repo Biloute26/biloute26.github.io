@@ -48,7 +48,7 @@ body{
   display:flex;align-items:center;justify-content:space-between;
   gap:12px;padding:14px 0;
   backdrop-filter:blur(14px);
-  background:linear-gradient(to bottom,var(--bg),transparent);
+  background:var(--bg);
 }
 .brand{font-family:ui-sans-serif,system-ui,sans-serif;font-weight:800;letter-spacing:.5px;
   font-size:15px;display:flex;align-items:center;gap:8px}
@@ -82,8 +82,8 @@ body{
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
 /* NAV */
-.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:10px 0 40px;
-  position:sticky;top:58px;z-index:30}
+.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 40px;padding:10px 0 12px;
+  position:sticky;top:58px;z-index:30;background:var(--bg);backdrop-filter:blur(14px)}
 .nav button{font-family:ui-sans-serif,sans-serif;cursor:pointer;font-size:13px;
   padding:8px 14px;border-radius:99px;border:1px solid var(--panel-border);
   background:var(--panel);color:var(--ink-soft);transition:.2s}
